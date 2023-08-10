@@ -2,20 +2,18 @@
   "name": "jsb25rt-diario-viajes",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch server.js"
+    "start": "node --watch server.js",
+    "initDB": "node ./db/init_db.js"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
   },
   "keywords": [],
-  "author": "Chiche-Sabalero",
-  "license": "ISC",
-  "devDependencies": {
-    "standard": "^17.1.0"
-  },
-  "eslintConfig": {
-    "extends": "standard"
-  },
+  "author": "Cristobal Dominguez <cristobald@gmail.com> (http://github.com/cristobaldominguez/)",
+  "license": "UNLICENSED",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
@@ -28,5 +26,11 @@
     "nodemailer": "^6.9.4",
     "nodemailer-sendgrid": "^1.0.3",
     "sharp": "^0.32.4"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
